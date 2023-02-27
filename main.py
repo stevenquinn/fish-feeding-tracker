@@ -86,7 +86,7 @@ class FishFeeder:
         if self.fed_morning is True and self.fed_evening is True:
             backgroundImage = "fed-evening"
 
-        self.magtag.graphics.set_background("/" + backgroundImage + ".bmp")
+        self.magtag.graphics.set_background("/images/" + backgroundImage + ".bmp")
 
         if self.should_refresh_display:
             self.magtag.display.refresh()
